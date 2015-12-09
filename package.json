@@ -1,0 +1,32 @@
+{
+  "name": "moviestodayapi",
+  "version": "0.0.0",
+  "description": "The MoviesToday API",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://ghostfreak3000@github.com/moviestoday/api"
+  },
+  "keywords": [
+    "moviestoday",
+    "api"
+  ],
+  "author": "Bishaka Samuel <sbishaka@gmail.com> (https://twitter.com/sbishaka)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moviestoday/api/issues"
+  },
+  "homepage": "https://github.com/moviestoday/api",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-http": "^1.0.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.0.6",
+    "compression": "^1.6.0",
+    "express": "^4.13.3"
+  }
+}
