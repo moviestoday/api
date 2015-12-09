@@ -6,9 +6,8 @@ var
     app = express()
     ;
 
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
-
+app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 8080);
+app.set('ip', process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1');
 app.use(compress());
 app.use(function(req, res, next) {
 
@@ -27,14 +26,9 @@ app.use(function(req, res, next) {
     next();
 });
 
-http.createServer(app).listen(server_port, server_ip_address, function(){
-    console.log('Express server listening on port ' + server_port);
+http.createServer(app).listen(app.get('port'), app.get('ip'), function(){
+    console.log('Express server listening on port ' + app.get('port'));
 });
-
-app.get('/', function (req, res) {
-    res.send("Hello World!")
-});
-
 
 app.get('/cinemas', function (req, res) {
     api.getCinemas().then(function(cinemas){
