@@ -30,6 +30,10 @@ http.createServer(app).listen(app.get('port'), app.get('ip'), function(){
     console.log('Express server listening on port ' + app.get('port'));
 });
 
+app.get('/', function (req, res) {
+    res.send(':)')
+});
+
 app.get('/cinemas', function (req, res) {
     api.getCinemas().then(function(cinemas){
         res.json(cinemas);
