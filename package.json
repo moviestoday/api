@@ -6,6 +6,10 @@
   "scripts": {
     "test": "mocha"
   },
+  "engines": {
+    "node": ">= 0.10.36",
+    "npm": ">= 1.4.28"
+  },
   "repository": {
     "type": "git",
     "url": "https://ghostfreak3000@github.com/moviestoday/api"
