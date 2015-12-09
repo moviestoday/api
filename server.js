@@ -28,7 +28,7 @@ app.use(function(req, res, next) {
 });
 
 http.createServer(app).listen(server_port, server_ip_address, function(){
-    console.log('Express server listening on port ' + app.get('port'));
+    console.log('Express server listening on port ' + server_port);
 });
 
 app.get('/', function (req, res) {
