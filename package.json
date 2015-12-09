@@ -4,7 +4,12 @@
   "description": "The MoviesToday API",
   "main": "server.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+	"start":"node server.js"
+  },
+  "engines": {
+    "node": ">= 0.10.36",
+    "npm": ">= 1.4.28"
   },
   "repository": {
     "type": "git",
