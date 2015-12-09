@@ -1,5 +1,14 @@
 language: node_js
 nodejs:
-  - "0.10.0"
+- 0.10.0
 before_install:
-  - "npm install -g mocha"
+- npm install -g mocha
+deploy:
+  provider: openshift
+  user: moviestoday256@gmail.com
+  password:
+    secure: cy6/GP+O4uiK61nZGtKyhFR3U5GjCByp7USk58o+GWu2UxeJzd5eYABy673/apLsmBS19S819b7B7Ltumzk0/kjGD4GnzgM0jo36RKS2MkEjCzuSuGUQHnCFFt6HTQ72al5LILShB84siisigWSuH5qDODD8z4m4Q6eMnaikaEeXMc2qjcrg9rOFW/i+2Vh/C1qSnP8Dlip3Y22c0af1BnrGs1+/sB/h/WuRo88xJkXF3QdcPmsjIFtUVXMBNVbglk2ABCnHLC5ozoNuzLsj9ETjC3e7qs8NFHDbyr/4A7GpGS790dujZnOyldF0JwnYbnwK+SExS1c/Os7vwPqlwSs8/jplcZ2x7g+gJeaDjebFg0TMXa3rTz429wSfXpU1qFgjZ3m1tFkfIwr1ujNtORrjNWzz01SOTS6ez8JfcLKEJ59rytO2KkMzXaOuaa+Dy28TRxS6kAX1a90vJO7RLjz8nw0mZKGeWs1+db+LQGBj6F+ltnpWh18unjAccg74sUXp8eHNxGpTM4C6PcYr86f8vlgjz9fWCqCOpadONU3KFZEAPWLfoUwZmtLqoN/ibyD5AeJ78/xphdIyWFmIlt3QNgh0ga5aI5EnafODN6DYIIcEMBA/TxY5EsqF7FbN5c0rN78ZtQRIseD3BWHAoD+g9Ox//EkxKERoY6wGZDk=
+  app: api
+  domain: moviestoday
+  on: master
+  
