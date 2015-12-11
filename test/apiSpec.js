@@ -6,7 +6,7 @@ var chai = require('chai'),
 
 chai.use(chaiHttp);
 
-describe('Cinemas', function() {
+describe('API', function() {
     it('should list ALL Uganda\'s cinemas on /cinemas GET',function(done){
         chai.request(server)
             .get("/cinemas")
