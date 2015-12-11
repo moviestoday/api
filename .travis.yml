@@ -14,3 +14,4 @@ deploy:
 branches:
   only:
     - master
+    - staging
