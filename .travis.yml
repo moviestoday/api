@@ -11,3 +11,6 @@ deploy:
   app: api
   domain: moviestoday
   on: master
+branches:
+  only:
+    - master
